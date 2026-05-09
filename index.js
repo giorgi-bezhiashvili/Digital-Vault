@@ -8,7 +8,7 @@ const hpp = require("hpp");
 const sanitize = require("mongo-sanitize");
 const https = require('https');
 const fs = require('fs');
-const addingRoute = require('./routes/adding'); // ან რაც ქვია ამ ფაილს
+const addingRoute = require('./routes/vault'); 
 // Config imports
 require("./config/passport"); 
 const authRoutes = require("./routes/auth");

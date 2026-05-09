@@ -21,7 +21,7 @@ passport.use(new GoogleStrategy({
                 user = new User({
                     googleId: profile.id,
                     userName: profile.email,
-                    password: "google-auth-user" // Placeholder for OAuth users
+                    password: "google-auth-user"
                 });
                 await user.save();
             } else if (!user.googleId) {

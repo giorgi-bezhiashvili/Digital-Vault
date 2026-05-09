@@ -18,13 +18,22 @@ Content-Type: application/json
 
 ### 3. adding to vault
 PATCH https://localhost:3000/api/Item
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzEwNjA5LCJleHAiOjE3NzgzMTE1MDl9.hHzS-1qrk_EXIjBZjLVIlEkZaQa9cYh42ueTQIT7-Lc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzE0MjY3LCJleHAiOjE3NzgzMTUxNjd9.u6htb_wrg9AX-8rYJ2Cb_7EARbFNO8d0pPixPbVT5cI
 Content-Type: application/json
 
 {
-    "site": "facebook.com",
-    "secret": "password123"
+    "name": "facebook.com",
+    "value": "password123"
 }
 ### delate
 DELETE https://localhost:3000/api/Item
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzEwNjA5LCJleHAiOjE3NzgzMTE1MDl9.hHzS-1qrk_EXIjBZjLVIlEkZaQa9cYh42ueTQIT7-Lc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzEzMTIyLCJleHAiOjE3NzgzMTQwMjJ9.OXtKMIRfDibN8UaklaIidm1vAD_Kqm7HoDjfxy8HQsw
+
+###specific delate
+PATCH https://localhost:3000/api/Item/69feec6b3b706ec13982c802
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzE0MjY3LCJleHAiOjE3NzgzMTUxNjd9.u6htb_wrg9AX-8rYJ2Cb_7EARbFNO8d0pPixPbVT5cI
+Content-Type: application/json
+
+### Get all items in the vault
+GET https://localhost:3000/api/item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzE0MjY3LCJleHAiOjE3NzgzMTUxNjd9.u6htb_wrg9AX-8rYJ2Cb_7EARbFNO8d0pPixPbVT5cI

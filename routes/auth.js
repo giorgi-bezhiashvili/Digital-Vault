@@ -6,7 +6,7 @@ const passport = require("passport");
 const User = require("../models/User");
 const { validate, schemas } = require("../middleware/validation");
 
-let refreshTokens = []; // Consider using Redis for this in production
+let refreshTokens = []; 
 const DUMMY_HASH = "$2b$10$abcdefghijklmnopqrstuuABCDEFGHIJKLMNOPQRSTUVWXYZ012345";
 
 const generateAccessToken = (user) => {
