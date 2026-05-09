@@ -1,0 +1,30 @@
+### 1. register
+POST https://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "userName": "johndoe12",
+    "password": "securePassword1231"
+}
+
+### 2. login
+POST https://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "userName": "johndoe12",
+    "password": "securePassword1231"
+}
+
+### 3. adding to vault
+PATCH https://localhost:3000/api/Item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzEwNjA5LCJleHAiOjE3NzgzMTE1MDl9.hHzS-1qrk_EXIjBZjLVIlEkZaQa9cYh42ueTQIT7-Lc
+Content-Type: application/json
+
+{
+    "site": "facebook.com",
+    "secret": "password123"
+}
+### delate
+DELETE https://localhost:3000/api/Item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImpvaG5kb2UxMiIsImlkIjoiNjlmZWRkNjhiMjEzZjZkNmIyYzJiZmMzIiwiaWF0IjoxNzc4MzEwNjA5LCJleHAiOjE3NzgzMTE1MDl9.hHzS-1qrk_EXIjBZjLVIlEkZaQa9cYh42ueTQIT7-Lc
